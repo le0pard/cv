@@ -28,7 +28,7 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v2
         with:
-          name: docs
+          name: cv
 
       - name: Create Release
         id: create_release
