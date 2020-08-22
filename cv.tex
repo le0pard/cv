@@ -1,0 +1,118 @@
+\documentclass[11pt,a4paper]{moderncv}
+% moderncv themes
+%\moderncvtheme[green]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+%\moderncvtheme[blue]{casual}
+
+\moderncvtheme[blue]{classic}
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}            % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Oleksii}
+\familyname{Vasyliev}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Kyiv, Ukraine}{}
+%\address{}{}    % optional, remove the line if not wanted
+%\mobile{mobile (optional)}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+%\email{email (optional)}                      % optional, remove the line if not wanted
+\homepage{leopard.in.ua}
+%\extrainfo{website:~http://leopard.in.ua} % optional, remove the line if not wanted
+%\photo[64pt]{ava3}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{I'm not a great programmer; I'm just a good programmer with great habits.}                 % optional, remove the line if not wanted
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2009--2010}{Master of computer systems and networks}{National Aviation University}{Kyiv}{\textit{Graduated with Honors}}{}  % arguments 3 to 6 are optional
+\cventry{2008--2010}{Financial specialist}{National Aviation University}{Kyiv}{}{}  % arguments 3 to 6 are optional
+\cventry{2005--2009}{Bachelor of computer engineering}{National Aviation University}{Kyiv}{\textit{Graduated with Honors}}{}  % arguments 3 to 6 are optional
+
+\section{Master thesis}
+\cvline{title}{\emph{Evaluation system of web resource performance}}
+\cvline{supervisors}{Associate professor V.I. Nadtochiy}
+\cvline{description}{\small The aim of work is to analyse existing methods for measurement of Web
+resources performance and to develop the program for providing better evaluation of performance, which was based on
+one of the models.}
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{Dec~2017--Present}{Software Architect}{Railsware Labs}{Kyiv}{}{}                % arguments 3 to 6 are optional
+\cventry{Feb~2013--Present}{Software Architect}{Mailtrap}{Kyiv}{}{}                % arguments 3 to 6 are optional
+\cventry{August~2009--Present}{Lead Software Engineer, DevOps}{Railsware}{Kyiv}{}{}                % arguments 3 to 6 are optional
+\cventry{Feb~2017--Dec~2017}{Software Architect}{MontessoriCompass.com}{Kyiv}{}{}                % arguments 3 to 6 are optional
+\cventry{Feb~2015--Jan~2017}{Software Architect}{4Finance}{Kyiv}{}{}                % arguments 3 to 6 are optional
+\cventry{Feb~2012--Feb~2015}{Software Architect}{Sendgrid Labs}{Kyiv}{}{}                % arguments 3 to 6 are optional
+\cventry{June~2009--August~2009}{Software Engineer, DevOps}{Bicycle Day}{Kyiv}{}{}% arguments 3 to 6 are optional
+\cventry{May~2007--July~2009}{Software Engineer, Ops}{Acta Art Media}{Kyiv}{}{}                % arguments 3 to 6 are optional
+\cventry{October~2006--April~2007}{Software Engineer}{MitriDAT}{Kyiv}{}{}                % arguments 3 to 6 are optional
+
+\subsection{Miscellaneous}
+\cventry{Jan~2013--Present}{Podcast Lead}{RWpod}{Kyiv}{}{Lead podcast about Ruby and Web technologies}% arguments 3 to 6 are optional
+\cventry{2019}{Jury in the Software Architecture category}{Ukrainian IT Awards 2019}{Kyiv}{}{}  % arguments 3 to 6 are optional
+\cventry{June~2007--June~2008}{Technical writer}{}{Kyiv}{}{Writing articles in Ukrainian IT-magazines}% arguments 3 to 6 are optional
+
+\section{Languages}
+\cvlanguage{English}{fluent}{}
+\cvlanguage{Russian}{native}{}
+\cvlanguage{Ukrainian}{native}{}
+
+\section{Certifications}
+\cventry{2007--2008}{CCNA Certified Specialist}{Ukrtelecom courses}{Kyiv}{\textit{Graduated with Honors}}{}  % arguments 3 to 6 are optional
+
+\section{Honors \& Awards}
+\cventry{2017}{The Best Professional in Software Architecture}{Ukrainian IT Awards 2017}{Kyiv}{}{}  % arguments 3 to 6 are optional
+\cventry{2015}{The Best Professional in Software Engineering}{Ukrainian IT Awards 2015}{Kyiv}{}{}  % arguments 3 to 6 are optional
+\cventry{2011}{1-st place at HTC Android Developer Context}{HTC Android Developer Context}{Kyiv}{}{}  % arguments 3 to 6 are optional
+
+\section{Computer skills}
+\cvline{Operating systems}{Windows, Linux, Mac OS}
+\cvline{Programming Languages}{Ruby, Python, JavaScript, Golang, Objective-C, Erlang, Elixir, C/C++}
+\cvline{Databases}{MySQL, PostgreSQL, MongoDB, CouchDB, Sqlite, Redis, Riak, Couchbase, Neo4j, Memcache, MemcacheDb, etc.}
+\cvline{Networking}{CISCO Routers, WAN, Apache, Nginx, lighttpd, etc.}
+\cvline{Revision control systems}{Git, Mercurial, Bazaar}
+\cvline{Others}{HTML, CSS, XML, Tex, LaTeX, etc.}
+
+\renewcommand{\listitemsymbol}{* } % change the symbol for lists
+
+\section{Webpages}
+\cvlistitem{https://leopard.in.ua}
+\cvlistitem{https://www.rwpod.com}
+\cvlistitem{https://github.com/le0pard}
+\cvlistitem{https://ua.linkedin.com/in/le0pard}
+\cvlistitem{https://twitter.com/leopard\_me}
+\cvlistitem{http://resume.github.com/?le0pard}
+
+\section{Publications}
+\cvlistitem{http://postgresql.leopard.in.ua/ \\ Working with Postgresql: tuning and scaling (russian book)}
+\cvlistitem{http://chef.leopard.in.ua/ \\ Cooking Infrastructure by Chef}
+\cvlistitem{http://leopard.in.ua/ \\ Blog}
+
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
