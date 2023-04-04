@@ -36,6 +36,4 @@ jobs:
           name: Release ${{ github.ref }}
           draft: false
           prerelease: false
-          with:
-            files: cv.pdf
-
+          files: cv.pdf
